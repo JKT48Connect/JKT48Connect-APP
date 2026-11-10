@@ -53,8 +53,21 @@ def upload(release, path, name):
 with tempfile.TemporaryDirectory() as tmp:
     apk = Path(tmp) / 'hikari.apk'
     digest = hashlib.sha256()
-    with apk.open('wb') as out:
-        for part in manifest['parts']:
+    if manifest.get('archive_url'):
+        # One-time signed artifact transport; only the APK is retained in Releases.
+        from zipfile import ZipFile
+        url = urllib.parse.urlparse(manifest['archive_url'])
+        assert url.scheme == 'https' and url.hostname.endswith('.oaiusercontent.com')
+        archive = Path(tmp) / 'release.zip'
+        with urllib.request.urlopen(manifest['archive_url'], timeout=180) as response:
+            archive.write_bytes(response.read(150 * 1024 * 1024))
+        with ZipFile(archive) as bundle:
+            member = bundle.getinfo('Hikari-' + version + '.apk')
+            assert 0 < member.file_size < 150 * 1024 * 1024
+            apk.write_bytes(bundle.read(member))
+        digest.update(apk.read_bytes())
+    with apk.open('ab' if manifest.get('archive_url') else 'wb') as out:
+        for part in manifest.get('parts', []):
             path = (ROOT / part).resolve()
             assert path.is_relative_to(ROOT / 'payload') and path.is_file()
             with path.open('rb') as source:

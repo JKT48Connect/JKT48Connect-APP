@@ -1,0 +1,7 @@
+{
+  "version": "2.5.1",
+  "sha256": "c6fa75843074565a03f0bf95624f082afcf6b84e1e706b1680cca0613436bae1",
+  "size": 50568970,
+  "archive_url": "https://sdmntprindiasocentral.oaiusercontent.com/files/00000000-cb48-8211-bad5-dcf1185b2018/raw?se=2026-11-10T17%3A47%3A01Z&sp=r&sv=2026-02-06&sr=b&scid=98bf2609-2661-467c-a34d-b87bb0ebc37a&skoid=5e5afa93-cb2e-42ad-a58a-830b5b446f03&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-11-10T01%3A44%3A37Z&ske=2026-11-11T01%3A44%3A37Z&sks=b&skv=2026-02-06&sig=ww0coDhbR%2BhPtBJMcpwASeEpOIiRAkthK4G5hcSaHLY%3D",
+  "notes": "Hikari 2.5.1\n\n- Player video custom liquid glass; tampilan replay dan story member diperbarui.\n- Penonton story: tombol di samping balasan, pencarian, avatar dan waktu lihat.\n- Info JKT48Connect menjadi channel bergaya chat, detail profil dan pilihan bisukan; pembaruan setiap dua detik saat terbuka.\n- Pip: avatar/profil khusus dan sesi lokal satu jam.\n- Perintah bot Telegram tampil saat mengetik /.\n- Stiker Telegram asli: Terbaru, Favorit, paket, simpan stiker orang lain, pasang paket, dan buat/kirim stiker dari galeri.\n- Efek regang input tidak terpotong; padding ikon dan header Tentang diperbaiki.\n\nLive IDN diarahkan ke pemutar resmi. Nobar hanya Showroom; replay IDN mengikuti jeda 72 jam.\n\nAndroid 8.0+, kode versi 29. Tanda tangan cocok dengan Hikari 2.4.2/2.5.0. 32 unit test lulus. Pengiriman lewat akun Telegram nyata tetap perlu diuji di perangkat."
+}
