@@ -1,0 +1,7 @@
+{
+  "version": "2.5.2",
+  "sha256": "23b022d1902d9e63d0bd65bc44a94e6f7cb7bd5189e10c80e6e3cf0d4c2879c0",
+  "size": 50585358,
+  "archive_url": "https://sdmntprseasia.oaiusercontent.com/files/00000000-c22c-8207-8615-90f8dd0f9bad/raw?se=2026-11-10T23%3A31%3A21Z&sp=r&sv=2026-02-06&sr=b&scid=8148897d-ac10-4328-8f4b-6a56be995fc0&skoid=5e5afa93-cb2e-42ad-a58a-830b5b446f03&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-11-10T22%3A45%3A13Z&ske=2026-11-11T22%3A45%3A13Z&sks=b&skv=2026-02-06&sig=YH6i8A92Z/%2BMTcblNASAxsyKu4Zb%2BQlAqI4VHl/z%2Bps%3D",
+  "notes": "Hikari 2.5.2\n\n• Slider durasi dan kontrol video memakai liquid glass yang mengikuti video.\n• Ketuk foto chat, gambar pengumuman, foto member, atau poster theater untuk membuka detail dan zoom; simpan/bagikan mengikuti izin pesan.\n• Tampilan detail Pip dan pemilih stiker diperbarui dengan tombol yang lebih nyaman.\n• Tata letak JKT48 lebih responsif; logo di dalam aplikasi kembali penuh, sedangkan ikon launcher tetap memiliki ruang aman.\n• Halaman Tentang disederhanakan.\n\nAndroid 8.0+, arm64-v8a dan armeabi-v7a. Ditandatangani dengan kunci rilis Hikari yang sama."
+}
