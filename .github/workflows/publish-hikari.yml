@@ -1,0 +1,21 @@
+name: Publish public Hikari APK
+on:
+  push:
+    branches: ['release-payload/hikari-*']
+    paths: ['payload/manifest.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: hikari-public-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify payload and publish APK releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/publish_hikari.py
