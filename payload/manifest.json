@@ -1,0 +1,11 @@
+{
+  "version": "2.4.2",
+  "size": 50398937,
+  "sha256": "3ece043bedfd4fe45e654b5a9866c302c9b0950b49c45a0946794e5bc06bffae",
+  "parts": [
+    "payload/hikari.part000",
+    "payload/hikari.part001",
+    "payload/hikari.part002"
+  ],
+  "notes": "Hikari 2.4.2 preview memperbaiki penyiapan video story: video dikonversi menjadi MP4 H.264/AAC, disesuaikan ukurannya, dan benar-benar dipotong hingga maksimal 60 detik sebelum dikirim. Pratinjau dan status penyiapan tampil sebelum unggah.\n\nUnduhan ini publik dan tidak memerlukan akun GitHub. Package dan kunci tanda tangan sama dengan 2.4.1 sehingga dapat dipasang sebagai pembaruan.\n\nBuild bertanda tangan dan 26 tes unit Android lulus. Uji ekspor pada emulator Android 12 sedang berjalan; laporan perangkat pengguna belum direproduksi menggunakan file video aslinya."
+}
